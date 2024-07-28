@@ -1,0 +1,9 @@
+version: "3.9"
+services:
+  asm-compilation-service:
+    build: .
+    image: asm-compilation
+    container_name: asm-compilation
+    command: "tail -f /dev/null"
+    volumes:
+      - .:/src
